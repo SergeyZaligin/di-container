@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Engine;
 use Engine\DI\DI;
