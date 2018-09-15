@@ -35,7 +35,14 @@ class Cms
 //        echo '<pre>';
 //        print_r($this->di);
 //        echo '</pre>';
-        $db = $this->di->get('test');
+        $db = $this->di->get('db');
         print_r($db);
-    }
+//        $insert = $db->query("INSERT INTO posts (title, content) VALUES (:title, :content)", [
+//       'title' => 'Hello World333',
+//       'content' => 'Wrire content333'
+//        ]);
+//        if ($insert > 0) {
+//            print('Success!!!');
+//        }
+      }
 }

@@ -18,7 +18,7 @@ class DI
    * @param type @string $value
    * @return \Engine\DI\DI
    */
-  public function set(string $key, array $value): DI
+  public function set(string $key, $value): DI
   {
     $this->container[$key] = $value;
     return $this;
@@ -30,7 +30,7 @@ class DI
    * @param type @string $key
    * @return @string
    */
-  public function get(string $key): array
+  public function get(string $key)
   {
     return $this->hasKey($key);
   }
@@ -40,7 +40,7 @@ class DI
    * @param type @string $key
    * @return string
    */
-  private function hasKey(string $key): array
+  private function hasKey(string $key)
   {
     return $this->container[$key] ?? null;
   }
