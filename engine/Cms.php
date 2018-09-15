@@ -18,9 +18,10 @@ class Cms
     
     /**
      * Constructor Cms
+     * 
      * @param \Engine\DI $di
      */
-    public function __construct(DI $di) 
+    public function __construct(DI $di)
     {
         $this->di = $di;
     }
@@ -28,7 +29,7 @@ class Cms
     /**
      * Run Cms
      */
-    public function run() 
+    public function run(): void 
     {
 //        echo 'Hello world';
 //        echo '<pre>';
